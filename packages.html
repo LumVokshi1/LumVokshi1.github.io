@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="packages.css">
+    </head>
+    <body>       
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        <header>
+            <h2>Party Time</h2>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#af9453"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-list ">
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li class="hideOnMobile"><a href="services.html">Services</a></li>
+                    <li class="hideOnMobile"><a href="packages.html">Packages</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li onclick= showSidebar() id="menuIcon"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="36px" fill="#af9453"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="packagesMain">
+            <h1>Packages</h1>
+        </section>
+        <section id="packagesBoxes">
+            <div class="responsive-div">
+
+                <div class="package-div" id="bronze">
+                    <h1>Bronze</h1>
+                    <ul>
+                        <li>
+                            <h3>Room Decorations</h3>
+                            <ul>
+                                <li>Ballons</li>
+                                <li>Banners</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Table Decorations</h3>
+                            <ul>
+                                <li>Centerpieces</li>
+                                <li>Gifts</li>
+                            </ul>
+                        </li>
+                        <li><h3>DJ entertainment</h3></li>
+                        <li><h3>Cold Buffet</h3></li>
+                    </ul>
+            </div>
+            <div class="package-div" id="silver">
+                <h1>Silver</h1>
+                <ul>
+                    <li><h3>All in the Bronze Package Plus:</h3></li>
+                    <li><h3>Invitation Handling</h3></li>
+                    <li><h3>Party Cost Clear Up</h3></li>
+                    <li><h3>Live Band</h3></li>
+                    <li><h3>Cold Buffet and Soft Drinks</h3></li>
+                </ul>
+                
+            </div>
+            <div class="package-div" id="gold">
+                <h1>Gold</h1>
+                <ul>
+                    <li><h3>All From Silver Plus:</h3></li>
+                    <li><h3>Staff in Attendance</h3></li>
+                    <li><h3>Guesst Accomodatiom</h3></li>
+                    <li><h3>Live Band plus Magician</h3></li>
+                    <li><h3>Hot and Cold Buffet with drinks</h3></li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+    </body>
+</html>

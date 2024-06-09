@@ -1,0 +1,361 @@
+@font-face {
+    font-family: RoleModel;
+    src: url("Fonts/role-model-font/RoleModelPersonalUseRegular-8MooA.otf");
+}
+
+@font-face {
+    font-family: Ragna;
+    src: url("Fonts/f24q220-ragna/ttf/f24q220-ragna-ragna-regular-400.ttf");
+}
+
+@font-face{
+    font-family: Rosmatika;
+    src: url("Fonts/rosmatika-font/RosmatikaRegular-BWA45.ttf")
+}
+
+@font-face {
+    font-family: PrintClearly;
+    src: url("Fonts/print-clearly-font/PrintClearly-GGP.ttf");
+}
+
+#home {
+    height: 130vh; 
+    width: 100vw;
+    margin: 0%;
+    background-image: url('Photos/background.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    text-align: center;
+}
+header{
+    display: flex;
+    position: absolute;
+    height: 7vh;
+    width: 100vw;
+    background-color: white;
+}
+
+header h2 {
+    margin-top: 1vh;
+    margin-left: 3vw;
+    color: goldenrod;
+    font-family: RoleModel;
+}
+
+nav {
+    display: flex;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 55vw;
+    padding: 0;
+    margin-top: 1vh;
+    display: flex; 
+}
+
+nav li {
+    padding: 3vh 2vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: #af9453;
+    font-family: RoleModel;
+}
+
+#menuIcon{
+    margin-bottom: 3vh;
+    color: black;
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+#home h1 {
+    font-family: RoleModel;
+    font-size: 100px;
+    color: white;
+    padding-left: 5vw;
+    position: relative;
+    height: fit-content;
+    /* margin-top: 55vh; */
+    /* top: 55vh; */
+    
+}
+
+#learnMoreBtn {
+    /* margin-top: 85vh; */
+    position: relative ;
+    height: 5vh;
+    top: 31vh;
+    /* right: 10vw; */ /*for 15.6 inch display*/
+    right: 17vw;
+    background-color: #af9453;
+    color: white;
+    /* border-color: white; */
+    font-family: Ragna;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#learnMoreBtn:hover {
+    transform: translateY(-5px);
+}
+
+#services {
+    margin-bottom: 20vh;
+    display: flex;
+}
+
+#blackbox {
+    height: 80vh;
+    width: 25vw;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    background-color: rgb(73, 67, 67);
+    text-align: center;
+}
+
+#blackbox h2 {
+    font-family: PrintClearly;
+    font-size: 75px;
+    color: white;
+}
+
+#blackbox h3 {
+    font-family: PrintClearly;
+    font-size: 30px;
+    position: relative;
+    top: 5%;
+    color: white;
+}
+
+#blackbox button {
+    font-family: PrintClearly;
+    color: white;
+    background-color: #af9453;
+    border: none;
+    font-size: xx-large;
+    position: relative;
+    top: 15%;
+}
+
+#blackbox img {
+    height: 15vh;
+    width: auto;
+}
+
+#servicesPhoto {
+    height: 80vh;
+    width: 70vw;
+    margin-top: 15vh;
+    position: relative;
+    background-image: url('Photos/weddingPhoto.png'); 
+    margin-left: 3vw;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+#packages {
+    height: 100vh;
+    display: flex;
+}
+
+#packagesPhoto {
+    height: 95vh;
+    width: 95vw;
+    position: relative;
+    background-image: url('Photos/pexels-annamw-1120162.jpg'); 
+    margin-left: 3vw;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+#packageBox {
+    background-color: #af9453;
+    position: relative;
+    display: flex;
+    height: 65vh;
+    width: 25vw;
+    top: 15vh;
+    left: 62vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#packageBox h1 {
+    text-align: center;
+    color: white;
+    font-family: PrintClearly;
+    font-size: 60px;
+    position: relative;
+    bottom: 20vh;
+    left: 7vw;
+    
+}
+
+#packageBox h3 {
+    position: relative;
+    top: 3vh;
+    right: 3vw;
+    color: white;
+    font-family: PrintClearly;
+    font-size: xx-large;
+}
+
+#packageBox button {
+    color: white;
+    background-color: #af9453;
+    border-color: white;
+    position: relative;
+    top: 20vh;
+    right: 10vw;
+    width: 8vw;
+    height: 5vh;
+}
+
+#footerBox {
+    height: 20vh;
+    width: 95vw;
+    background-color: #af9453;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    display: flex;
+}
+
+#footerBoxText1 {
+    color: white;
+    font-family: PrintClearly;
+    margin-left: 30vw;
+    margin-top: 4vh;
+}
+
+#footerBoxText2 {
+    margin-left: 5vw;
+    margin-top: 4vh;
+    color: white;
+    font-family: PrintClearly;
+}
+
+#footerBoxText3 {
+    margin-left: 5vw;
+    margin-top: 4vh;
+    color: white;
+    font-family: PrintClearly;
+}
+
+@media (max-width: 800px){
+    #home {
+        height: 130vh; 
+        width: 100%;
+        margin: 0%;
+        
+    }
+
+    header h2 {
+        margin-top: 0vh;
+        margin-left: 3vw;
+        color: goldenrod;
+        font-family: RoleModel;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    #menuIcon{
+        display: flex;
+    }
+
+    #home {
+        width: 100%;
+    }
+
+    #home h1 {
+        font-size: 50px;
+        left: 15%;
+    }
+
+    #learnMoreBtn {
+        right: 30%;
+    }
+
+    #services {
+        display: grid;
+    }
+
+    #blackbox {
+        width: 95%;
+        height: 100%;
+    }
+
+    #servicesPhoto {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    #packageBox {
+        width: 60%;
+        height: 70%;
+        left: 18%;
+    }
+
+    #packageBox h1 {
+        left: 30%;
+    }
+
+    #packageBox h3 {
+        right: 25%;
+    }
+
+    #packageBox button {
+        right: 60%;
+        width: 60%;
+    }
+
+    #packagesPhoto {
+        width: 95%;
+        margin-left: 5vw;
+    }
+
+    #footerBox {
+        height: 30vh;
+    }
+    #footerBoxText1 {
+        margin-left: 5vw;
+    }
+
+}
